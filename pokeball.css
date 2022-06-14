@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+}
+
+@font-face {
+    font-family: 'PokemonSolid';
+    src: url(fonts/PokemonSolid.ttf);
+} 
+
+@font-face {
+    font-family: PokemonGb-RAeo;
+    src: url(fonts/PokemonGb-RAeo.ttf);
+}
+
+@keyframes slidein {
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 10px;
+    }
+    75%{
+        left: -10px;
+    }
+    100%{
+        left: 0px;
+    }
+  }
+
+@keyframes codebeauty{
+    0%{
+        top: -1000px;
+    }
+    50%{
+        top: 0px;
+    }
+    75%{
+        top: -100px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+
+@keyframes smallspin{
+    0%{
+        transform: rotateZ(0deg);
+    }
+
+    50%{
+        transform: rotateZ(50deg);
+    }
+
+    75%{
+        transform: rotateZ(-50deg);
+    }
+}
+
+@keyframes spin{
+    0%{
+        transform: rotateZ(0deg);
+    }
+
+    50%{
+        transform: rotateZ(180deg);
+    }
+
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes buttonglox{
+    0%{
+        background: #7f8c8d;
+    }
+    50%{
+        background: red;
+    }
+    100%{
+        background: #7f8c8d;
+    }
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mainball{
+    position: relative;
+    margin-left:-70%;
+    width: 350px;
+    height: 350px;
+    background: #fff;
+    border: 20px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    animation: 
+        4s ease-in 1s infinite both running slidein,
+        4s ease-in 1s infinite both running smallspin,
+        codebeauty 1s ease-in-out,
+        spin .75s ease-in-out 1;
+}
+
+.secondball{
+    position: relative;
+    margin-left:70%;
+    width: 350px;
+    height: 350px;
+    background: #fff;
+    border: 20px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    animation: 
+        4s ease-in 2s infinite both running slidein,
+        4s ease-in 2s infinite both running smallspin,
+
+        codebeauty 1s ease-in-out,
+        spin 0.85s ease-in-out 1;
+}
+
+.pokebutton:hover{
+    background: red;
+}
+
+
+.secondball::before,
+.secondball::after{
+    content: '';
+    position: absolute;
+}
+
+.secondball::before{
+    background: red;
+    width: 100%;
+    height: 50%;
+}
+
+.secondball::after{
+    top: calc(50% - 15px);
+    width: 100%;
+    height: 25px;
+    background: #000;
+}
+
+
+.mainball::before,
+.mainball::after{
+    content: '';
+    position: absolute;
+}
+
+.mainball::before{
+    background: red;
+    width: 100%;
+    height: 50%;
+}
+
+.mainball::after{
+    top: calc(50% - 15px);
+    width: 100%;
+    height: 25px;
+    background: #000;
+}
+
+.pokebutton{
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    background: #7f8c8d;
+    border: 20px solid #fff;
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow: 0 0 0 20px #000;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    font-size: x-large;
+    font-family: PokemonGb-RAeo;
+}
+
+.languages{
+    font-size: medium;
+    margin-left: 26%;
+    font-family: PokemonGb-RAeo;
+    font-style: bold;
+}
