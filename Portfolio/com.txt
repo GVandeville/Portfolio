@@ -1,3 +1,0 @@
-Bootstrap/HTML/CSS
-
-Tout est en vertical avec un lien redirigeant vers la section demandée
