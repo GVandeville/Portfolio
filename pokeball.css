@@ -113,7 +113,7 @@ body{
 
 .secondball{
     position: relative;
-    margin-left:70%;
+    margin-inline: 60% 80%;
     width: 350px;
     height: 350px;
     background: #fff;
