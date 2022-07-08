@@ -597,7 +597,7 @@
     }
 
     div#stats {
-        height: 130px;
+        height: 220px;
         width: 280px;
         padding: 10px;
         background-color: #30da0c;
@@ -605,7 +605,7 @@
         font-size: 13px;
         font-family: arial, sans-serif;
         position: absolute;
-        top: 130px;
+        top: 120px;
         left: 25px;
         border-radius: 15px;
         -webkit-border-radius: 15px;
@@ -620,14 +620,14 @@
     div#blueButtons1 {
         z-index: 1;
         position: absolute;
-        top: 295px;
+        top: 380px;
         left: 49px;
     }
 
     div#blueButtons2 {
         z-index: 1;
         position: absolute;
-        top: 335px;
+        top: 420px;
         left: 49px;
     }
 
@@ -656,7 +656,7 @@
         width: 50px;
         z-index: 1;
         position: absolute;
-        top: 385px;
+        top: 470px;
         left: 210px;
         border-radius: 100px;
         -webkit-border-radius: 100px;
@@ -677,7 +677,7 @@
         width: 50px;
         z-index: 1;
         position: absolute;
-        top: 385px;
+        top: 470px;
         left: 270px;
         border-radius: 100px;
         -webkit-border-radius: 100px;
@@ -699,7 +699,7 @@
         float: left;
         z-index: 1;
         position: absolute;
-        top: 383px;
+        top: 470px;
         left: 25px;
         box-shadow: 0 0 10px #490000;
         -webkit-box-shadow: 0 0 10px #490000;
@@ -721,7 +721,7 @@
         float: left;
         z-index: 1;
         position: absolute;
-        top: 383px;
+        top: 470px;
         left: 51px;
         box-shadow: 0 0 10px #490000;
         -webkit-box-shadow: 0 0 10px #490000;
