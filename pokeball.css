@@ -1431,7 +1431,7 @@
 
     .containerF {
         position: absolute;
-        top: 35%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -1526,7 +1526,7 @@
 
     .music {
         text-align: center;
-        margin-top: 350px;
+        margin-top: 300px;
     }
 
     .title {
@@ -1549,7 +1549,7 @@
         text-align: center;
         font-size: smaller;
         font-family: PokemonGb-RAeo;
-        margin-top:375px;
+        margin-top:200px;
     }
 }
 
