@@ -540,14 +540,14 @@
 
     .containerF {
         position: absolute;
-        top: 45%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
 
     .containerS {
         position: absolute;
-        top: 45%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -982,14 +982,14 @@
 
     .containerF {
         position: absolute;
-        top: 55%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
 
     .containerS {
         position: absolute;
-        top: 55%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -1080,7 +1080,7 @@
 
     .music {
         text-align: center;
-        margin-top: 340px;
+        margin-top: 360px;
     }
 
     .title {
@@ -1207,14 +1207,14 @@
 
     .containerF {
         position: absolute;
-        top: 57%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
 
     .containerS {
         position: absolute;
-        top: 53%;
+        top: 305%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -1305,7 +1305,7 @@
 
     .music {
         text-align: center;
-        margin-top: 275px;
+        margin-top: 300px;
     }
 
     .title {
@@ -1437,7 +1437,7 @@
     }
     .containerS {
         position: absolute;
-        top: 80%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -1526,7 +1526,7 @@
 
     .music {
         text-align: center;
-        margin-top: 300px;
+        margin-top: 265px;
     }
 
     .title {
@@ -1549,7 +1549,7 @@
         text-align: center;
         font-size: smaller;
         font-family: PokemonGb-RAeo;
-        margin-top:230px;
+        margin-top:250px;
     }
 }
 
