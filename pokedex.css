@@ -620,14 +620,7 @@
     div#blueButtons1 {
         z-index: 1;
         position: absolute;
-        top: 380px;
-        left: 49px;
-    }
-
-    div#blueButtons2 {
-        z-index: 1;
-        position: absolute;
-        top: 420px;
+        top: 400px;
         left: 49px;
     }
 
@@ -649,8 +642,24 @@
         -webkit-box-shadow: -1px 2px #001c91;
         -moz-box-shadow: -1px 2px #001c91;
         -o-box-shadow: -1px 2px #001c91;
+        cursor:pointer;
     }
-
+    div.redButton {
+        height: 35px;
+        width: 45px;
+        background-color: #c00d0d;
+        float: left;
+        margin-right: 7px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -o-border-radius: 10px;
+        background: linear-gradient(top, #c00d0d 0%, #c00d0d 80%);
+        background: -webkit-linear-gradient(top, #c00d0d 0%, #c00d0d 80%);
+        background: -moz-linear-gradient(top, #c00d0d 0%, #c00d0d 80%);
+        background: -o-linear-gradient(top, #c00d0d 0%, #c00d0d 80%);
+    }
+    
     div#barbutton3 {
         height: 13px;
         width: 50px;
@@ -771,5 +780,42 @@
         -webkit-box-shadow: 0 0 20px #ff6600 inset;
         -moz-box-shadow: 0 0 20px #ff6600 inset;
         -o-box-shadow: 0 0 20px #ff6600 inset;
+    }
+}
+     .popup-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.9);
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        display:none;
+    }
+
+     .popup-image span {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .popup-image img {
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        transform: translate(-50%;-5O%);
+        border: 5px solid #fff;
+        border-radius: 5px;
+        width: 600px;
+        object-fit: cover;
+    }
+@media (max-width:768px){
+    .popup-image img{
+        width:95%;
     }
 }

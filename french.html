@@ -70,7 +70,7 @@
                 <strong>Age:</strong> 21<br />
                 <strong>Nationalité:</strong> Français<br />
                 <strong>Numéro de téléphone:</strong> +33695943839<br /><br />
-                
+
                 <strong>Qualités:</strong> Polyvalent, Responsable, Organisé<br />
                 <strong>Aime:</strong> Veille technologique, Ordinateurs<br />
                 <strong>N'aime pas:</strong> Covid-19<br />
@@ -80,30 +80,50 @@
                 Travailler à l'étranger pour 3 mois en 2023
             </div>
             <div id="blueButtons1">
-                <div class="blueButton"></div>
-                <div class="blueButton"></div>
-                <div class="blueButton"></div>
-                <div class="blueButton"></div>
-                <div class="blueButton"></div>
-            </div>
-            <div id="blueButtons2">
-                <div class="blueButton"></div>
-                <div class="blueButton"></div>
-                <div class="blueButton"></div>
-                <div class="blueButton"></div>
-                <div class="blueButton"></div>
+                <div class="blueButton" id="1"></div>
+                <div class="redButton"></div>
+                <div class="blueButton" id="2"></div>
+                <div class="redButton"></div>
+                <div class="blueButton" id="3"></div>
             </div>
             <div id="miniButtonGlass4"></div>
             <div id="miniButtonGlass5"></div>
             <div id="barbutton3"></div>
             <div id="barbutton4"></div>
-            
+
             <div id="bg_curve1_right" style="background-color: grey;"></div>
-            <div id="bg_curve2_right" ></div>
+            <div id="bg_curve2_right"></div>
             <div id="curve1_right"></div>
-            <div id="curve2_right" style="background-color: grey;"><div align="center">
-    <audio id="player" autoplay controls><source src="music/battle-castle-pokemon-platinum.mp3" type="audio/mp3"></audio>
-</div></div>
+            <div id="curve2_right" style="background-color: grey;">
+                <div align="center">
+                    <audio id="player" autoplay controls><source src="music/battle-castle-pokemon-platinum.mp3" type="audio/mp3"></audio>
+                </div>
+            </div>
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="images/cover.png" alt="" />
+            </div>
         </div>
     </div>
+    <script>
+        document.querySelectorAll('#blueButtons1').forEach(blueButton => {
+            document.getElementById('1').onclick = () => {
+                document.querySelector('.popup-image img').src = "images/philippines-monument.png";
+                document.querySelector('.popup-image').style.display = 'block';
+            }
+            document.getElementById('2').onclick = () => {
+                document.querySelector('.popup-image img').src = "images/indonesia-monument.jpg";
+                document.querySelector('.popup-image').style.display = 'block';
+            }
+            document.getElementById('3').onclick = () => {
+                document.querySelector('.popup-image img').src = "images/malaysia-monument.jpg";
+                document.querySelector('.popup-image').style.display = 'block';
+            }
+        });
+
+        document.querySelector('.popup-image span').onclick = () => {
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+
+    </script>
 </body>
