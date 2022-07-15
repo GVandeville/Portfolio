@@ -806,9 +806,9 @@
 
     .popup-image img {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%:-5O%);
+        top: 15%;
+        left: 25%;
+        transform: translate(-50:-50);
         border: 5px solid #fff;
         border-radius: 5px;
         width: 600px;
@@ -816,6 +816,6 @@
     }
 @media (max-width:768px){
     .popup-image img{
-        width:65%;
+        width:60%;
     }
 }
