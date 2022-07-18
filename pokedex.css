@@ -222,18 +222,17 @@
         border-radius: 15px;
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
-        -o-border-radius: 15px;
     }
 
-        div#screen:after {
-            content: "";
-            border-top: 40px solid #b0b0b0;
-            border-left: 40px solid #c00d0d;
-            height: 0;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
+    div#screen:after {
+        content: "";
+        border-top: 40px solid #b0b0b0;
+        border-left: 40px solid #c00d0d;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
 
     div#picture {
         height: 175px;
@@ -246,7 +245,6 @@
         border-radius: 15px;
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
-        -o-border-radius: 15px;
     }
 
         div#picture img {
@@ -268,7 +266,6 @@
         border-radius: 15px;
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
-        -o-border-radius: 15px;
     }
 
     div#buttontopPicture1 {
@@ -284,15 +281,14 @@
         border-radius: 30px;
         -webkit-border-radius: 30px;
         -moz-border-radius: 30px;
-        -o-border-radius: 30px;
         box-shadow: -2px 1px #5e0000;
         -webkit-box-shadow: -2px 1px #5e0000;
         -moz-box-shadow: -2px 1px #5e0000;
-        -o-box-shadow: -2px 1px #5e0000;
         background: linear-gradient(top, #c00d0d 0%, #8b0000 80%);
         background: -webkit-linear-gradient(top, #c00d0d 0%, #8b0000 80%);
         background: -moz-linear-gradient(top, #c00d0d 0%, #8b0000 80%);
         background: -o-linear-gradient(top, #c00d0d 0%, #8b0000 80%);
+        cursor: pointer;
     }
 
     div#speakers {
@@ -379,6 +375,7 @@
         position: absolute;
         top: 394px;
         left: 230px;
+        cursor: pointer;
     }
 
     div#topcross {
@@ -391,15 +388,11 @@
         box-shadow: -3px 2px #010101;
         -webkit-box-shadow: -3px 2px #010101;
         -moz-box-shadow: -3px 2px #010101;
-        -o-box-shadow: -3px 2px #010101;
         border-top-left-radius: 5px;
         -webkit-border-top-left-radius: 5px;
-        -moz-border-top-left-radius: 5px;
-        -o-border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         -webkit-border-top-right-radius: 5px;
-        -moz-border-top-right-radius: 5px;
-        -o-border-top-right-radius: 5px;
+        cursor: pointer;
     }
 
     div#leftcross {
@@ -413,15 +406,11 @@
         box-shadow: -3px 2px #010101;
         -webkit-box-shadow: -3px 2px #010101;
         -moz-box-shadow: -3px 2px #010101;
-        -o-box-shadow: -3px 2px #010101;
         border-top-left-radius: 5px;
         -webkit-border-top-left-radius: 5px;
-        -moz-border-top-left-radius: 5px;
-        -o-border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         -webkit-border-bottom-left-radius: 5px;
-        -moz-border-bottom-left-radius: 5px;
-        -o-border-bottom-left-radius: 5px;
+        cursor: pointer;
     }
 
     div#midcross {
@@ -434,7 +423,7 @@
         box-shadow: -3px 2px #010101;
         -webkit-box-shadow: -3px 2px #010101;
         -moz-box-shadow: -3px 2px #010101;
-        -o-box-shadow: -3px 2px #010101;
+        cursor: pointer;
     }
 
     div#rightcross {
@@ -447,15 +436,11 @@
         box-shadow: -3px 2px #010101;
         -webkit-box-shadow: -3px 2px #010101;
         -moz-box-shadow: -3px 2px #010101;
-        -o-box-shadow: -3px 2px #010101;
         border-top-right-radius: 5px;
         -webkit-border-top-right-radius: 5px;
-        -moz-border-top-right-radius: 5px;
-        -o-border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         -webkit-border-bottom-right-radius: 5px;
-        -moz-border-bottom-right-radius: 5px;
-        -o-border-bottom-right-radius: 5px;
+        cursor: pointer;
     }
 
     div#botcross {
@@ -468,15 +453,11 @@
         box-shadow: -3px 2px #010101;
         -webkit-box-shadow: -3px 2px #010101;
         -moz-box-shadow: -3px 2px #010101;
-        -o-box-shadow: -3px 2px #010101;
         border-bottom-left-radius: 5px;
         -webkit-border-bottom-left-radius: 5px;
-        -moz-border-bottom-left-radius: 5px;
-        -o-border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         -webkit-border-bottom-right-radius: 5px;
-        -moz-border-bottom-right-radius: 5px;
-        -o-border-bottom-right-radius: 5px;
+        cursor: pointer;
     }
 
     div#upT {
