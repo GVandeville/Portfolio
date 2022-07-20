@@ -108,42 +108,6 @@
     </div>
     <audio id="audioA" src="sound/Pokemon-click-A.mp3"></audio>
     <audio id="audioB" src="sound/Pokemon-click-B.mp3"></audio>
-    <script>
-        millisecondsToWait = 250;
+    <script src="pokedex.js"></script>
 
-        document.querySelectorAll('#blueButtons1').forEach(blueButton => {
-            document.getElementById('1').onclick = () => {
-                var audio = document.getElementById("audioA");
-                audio.play();
-                setTimeout(function () { document.querySelector('.popup-image img').src = "images/philippines-monument.png" }, millisecondsToWait);
-                setTimeout(function () { document.querySelector('.popup-image').style.display = 'block' }, millisecondsToWait);
-            }
-            document.getElementById('2').onclick = () => {
-                var audio = document.getElementById("audioA");
-                audio.play();
-                setTimeout(function () { document.querySelector('.popup-image img').src = "images/indonesia-monument.jpg" }, millisecondsToWait);
-                setTimeout(function () { document.querySelector('.popup-image').style.display = 'block' }, millisecondsToWait);
-            }
-            document.getElementById('3').onclick = () => {
-                var audio = document.getElementById("audioA");
-                audio.play();
-                setTimeout(function () { document.querySelector('.popup-image img').src = "images/malaysia-monument.jpg" }, millisecondsToWait);
-                setTimeout(function () { document.querySelector('.popup-image').style.display = 'block' }, millisecondsToWait);
-            }
-        });
-
-        document.querySelector('.popup-image span').onclick = () => {
-            document.querySelector('.popup-image').style.display = 'none';
-        }
-
-        function playA() {
-            var audio = document.getElementById("audioA");
-            audio.play();
-        }
-        function playB() {
-            var audio = document.getElementById("audioB");
-            audio.play();
-
-        }
-    </script>
 </body>

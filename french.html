@@ -81,11 +81,11 @@
                 Travailler à l'étranger pour 3 mois en 2023
             </div>
             <div id="blueButtons1">
-                <div class="blueButton" id="1"></div>
+                <div class="blueButton" id="1" onclick="showImage()"></div>
                 <div class="redButton"></div>
-                <div class="blueButton" id="2"></div>
+                <div class="blueButton" id="2" onclick="showImage()"></div>
                 <div class="redButton"></div>
-                <div class="blueButton" id="3"></div>
+                <div class="blueButton" id="3" onclick="showImage()"></div>
             </div>
             <div id="miniButtonGlass4"></div>
             <div id="miniButtonGlass5"></div>
@@ -108,41 +108,5 @@
     </div>
     <audio id="audioA" src="sound/Pokemon-click-A.mp3"></audio>
     <audio id="audioB" src="sound/Pokemon-click-B.mp3"></audio>
-    <script>
-        millisecondsToWait = 250;
-
-        document.querySelectorAll('#blueButtons1').forEach(blueButton => {
-            document.getElementById('1').onclick = () => {
-                var audio = document.getElementById("audioA");
-                audio.play();
-                setTimeout(function () { document.querySelector('.popup-image img').src = "images/philippines-monument.png" }, millisecondsToWait);
-                setTimeout(function () { document.querySelector('.popup-image').style.display = 'block' }, millisecondsToWait);
-            }
-            document.getElementById('2').onclick = () => {
-                var audio = document.getElementById("audioA");
-                audio.play();
-                setTimeout(function () { document.querySelector('.popup-image img').src = "images/indonesia-monument.jpg" }, millisecondsToWait);
-                setTimeout(function () { document.querySelector('.popup-image').style.display = 'block' }, millisecondsToWait);
-            }
-            document.getElementById('3').onclick = () => {
-                var audio = document.getElementById("audioA");
-                audio.play();
-                setTimeout(function () { document.querySelector('.popup-image img').src = "images/malaysia-monument.jpg" }, millisecondsToWait);
-                setTimeout(function () { document.querySelector('.popup-image').style.display = 'block' }, millisecondsToWait);
-            }
-        });
-
-        document.querySelector('.popup-image span').onclick = () => {
-            document.querySelector('.popup-image').style.display = 'none';
-        }
-
-        function playA() {
-            var audio = document.getElementById("audioA");
-            audio.play();
-        }
-        function playB() {
-            var audio = document.getElementById("audioB");
-            audio.play();
-        }
-    </script>
+    <script src="pokedex.js"></script>
 </body>
