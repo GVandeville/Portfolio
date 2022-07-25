@@ -6,6 +6,7 @@
 
 
 @media all {
+        
 
     div#pokedex {
         width: 750px;
@@ -272,7 +273,7 @@
         margin-right: 20px;
     }
 
-    div#buttonbottomPicture {
+    .buttonbottomPicture {
         height: 26px;
         width: 26px;
         background-color: #c00d0d;
@@ -281,14 +282,18 @@
         border-radius: 30px;
         -webkit-border-radius: 30px;
         -moz-border-radius: 30px;
-        box-shadow: -2px 1px #5e0000;
-        -webkit-box-shadow: -2px 1px #5e0000;
-        -moz-box-shadow: -2px 1px #5e0000;
         background: linear-gradient(top, #c00d0d 0%, #8b0000 80%);
         background: -webkit-linear-gradient(top, #c00d0d 0%, #8b0000 80%);
         background: -moz-linear-gradient(top, #c00d0d 0%, #8b0000 80%);
         background: -o-linear-gradient(top, #c00d0d 0%, #8b0000 80%);
         cursor: pointer;
+    }
+    .buttonbottomPicture:hover {
+        background-color: rgba(255, 0, 0, 1);
+    }
+
+    .buttonbottomPicture:active {
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
     }
 
     div#speakers {
@@ -605,7 +610,7 @@
         left: 49px;
     }
 
-    div.blueButton {
+    .blueButton {
         height: 35px;
         width: 45px;
         background-color: #003300;
@@ -625,7 +630,14 @@
         -o-box-shadow: -1px 2px #001c91;
         cursor:pointer;
     }
-    div.redButton {
+    .blueButton:hover {
+        background-color: rgba(255, 0, 0, 1);
+    }
+
+    .blueButton:active {
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }
+    .redSpace {
         height: 35px;
         width: 45px;
         background-color: #c00d0d;
