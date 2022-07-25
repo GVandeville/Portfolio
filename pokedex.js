@@ -11,21 +11,21 @@ function playB() {
 
 function showPicture1() {
     playA();
-    millisecondsToWait = 150;
+    millisecondsToWait = 200;
     setTimeout(function () { document.querySelector('.popup-image img').src = "images/philippines-monument.png" }, millisecondsToWait);
     setTimeout(function () { document.querySelector('.popup-image').style.display = 'block' }, millisecondsToWait);
 }
 
 function showPicture2() {
     playA();
-    millisecondsToWait = 150;
+    millisecondsToWait = 200;
     setTimeout(function () { document.querySelector('.popup-image img').src = "images/indonesia-monument.jpg" }, millisecondsToWait);
     setTimeout(function () { document.querySelector('.popup-image').style.display = 'block' }, millisecondsToWait);
 }
 
 function showPicture3() {
     playA();
-    millisecondsToWait = 150;
+    millisecondsToWait = 200;
     setTimeout(function () { document.querySelector('.popup-image img').src = "images/malaysia-monument.jpg" }, millisecondsToWait);
     setTimeout(function () { document.querySelector('.popup-image').style.display = 'block' }, millisecondsToWait);
 }
