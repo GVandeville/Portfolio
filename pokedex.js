@@ -1,3 +1,5 @@
+var revert = 0;
+
 //Play a sound effect
 function playA() {
     var audio = document.getElementById("audioA");
@@ -30,19 +32,39 @@ function showPicture3() {
     setTimeout(function () { document.querySelector('.popup-image').style.display = 'block' }, millisecondsToWait);
 }
 
-let btn = document.getElementById("1");
+function showPicture4() {
+    playA();
+    millisecondsToWait = 300;
+    if (revert % 2 === 0) {
+        setTimeout(function () { document.querySelector('#picture img').style.height = '200' }, millisecondsToWait);
+        setTimeout(function () { document.querySelector('#picture img').src = "images/pokeball.png" }, millisecondsToWait);
+
+    }
+    else {
+        setTimeout(function () { document.querySelector('#picture img').style.height = '150' }, millisecondsToWait);
+        setTimeout(function () { document.querySelector('#picture img').src = "images/pixel-art.png" }, millisecondsToWait);
+    }
+    revert++;
+}
+
+let btn = document.getElementById("Blue1");
 btn.addEventListener('click', event => {
     showPicture1();
 });
 
-let btn2 = document.getElementById("2");
+let btn2 = document.getElementById("Blue2");
 btn2.addEventListener('click', event => {
     showPicture2();
 });
 
-let btn3 = document.getElementById("3");
+let btn3 = document.getElementById("Blue3");
 btn3.addEventListener('click', event => {
     showPicture3();
+});
+
+let btn4 = document.getElementById("profileButton");
+btn4.addEventListener('click', event => {
+    showPicture4();
 });
 
 //Possibility to quit the image
