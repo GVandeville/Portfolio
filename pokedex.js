@@ -9,6 +9,8 @@ function playA() {
 function playB() {
     var audio = document.getElementById("audioB");
     audio.play();
+    audio.volume = 1.0;
+
 }
 
 //Launch sound effect and change the image
@@ -67,6 +69,11 @@ btn3.addEventListener('click', event => {
 let btn4 = document.getElementById("profileButton");
 btn4.addEventListener('click', event => {
     showPicture4();
+});
+
+let music = document.getElementById('player');
+music.addEventListener("playing", () => {
+    music.volume = 0.2;
 });
 
 //Function triggered if clicked on a cross
