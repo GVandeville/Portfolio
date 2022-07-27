@@ -68,6 +68,7 @@ btn4.addEventListener('click', event => {
 });
 
 //Possibility to quit the image
-document.querySelector('.popup-image span').onclick = () => {
+let cross = document.querySelector('.popup-image span');
+cross.addEventListener('click', event => {
     document.querySelector('.popup-image').style.display = 'none';
-}
+});
