@@ -11,6 +11,7 @@ function playB() {
     audio.play();
 }
 
+//Launch sound effect and change the image
 function showPicture1() {
     playA();
     millisecondsToWait = 200;
@@ -47,6 +48,7 @@ function showPicture4() {
     revert++;
 }
 
+//Function triggered if clicked on a button with an Id
 let btn = document.getElementById("Blue1");
 btn.addEventListener('click', event => {
     showPicture1();
@@ -67,8 +69,9 @@ btn4.addEventListener('click', event => {
     showPicture4();
 });
 
-//Possibility to quit the image
+//Function triggered if clicked on a cross
 let cross = document.querySelector('.popup-image span');
 cross.addEventListener('click', event => {
+    //Possibility to quit an image
     document.querySelector('.popup-image').style.display = 'none';
 });
