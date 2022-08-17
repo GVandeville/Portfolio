@@ -13,6 +13,13 @@ function playB() {
 
 }
 
+function playLuxray() {
+    var audio = document.getElementById("audioLuxray");
+    audio.play();
+    audio.volume = 0.1;
+
+}
+
 //Launch sound effect and change the image
 function showPicture1() {
     playA();
@@ -39,9 +46,9 @@ function showPicture4() {
     playA();
     millisecondsToWait = 300;
     if (revert % 2 === 0) {
-        setTimeout(function () { document.querySelector('#picture img').style.height = '200' }, millisecondsToWait);
-        setTimeout(function () { document.querySelector('#picture img').src = "images/pokeball.png" }, millisecondsToWait);
-
+        setTimeout(function () { document.querySelector('#picture img').src = "images/pixel-art-luxray.png" }, millisecondsToWait);
+        setTimeout(function () { document.querySelector('#picture img').style.height = "110%" }, millisecondsToWait);
+        setTimeout(function () { playLuxray() }, millisecondsToWait);
     }
     else {
         setTimeout(function () { document.querySelector('#picture img').style.height = '150' }, millisecondsToWait);
