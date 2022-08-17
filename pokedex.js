@@ -47,11 +47,9 @@ function showPicture4() {
     millisecondsToWait = 300;
     if (revert % 2 === 0) {
         setTimeout(function () { document.querySelector('#picture img').src = "images/pixel-art-luxray.png" }, millisecondsToWait);
-        setTimeout(function () { document.querySelector('#picture img').style.height = "110%" }, millisecondsToWait);
         setTimeout(function () { playLuxray() }, millisecondsToWait);
     }
     else {
-        setTimeout(function () { document.querySelector('#picture img').style.height = '150' }, millisecondsToWait);
         setTimeout(function () { document.querySelector('#picture img').src = "images/pixel-art.png" }, millisecondsToWait);
     }
     revert++;
