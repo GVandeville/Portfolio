@@ -45,14 +45,7 @@ function showPicture3() {
 function showPicture4() {
     playA();
     millisecondsToWait = 300;
-    if (revert % 2 === 0) {
-        setTimeout(function () { document.querySelector('#picture img').src = "images/pixel-art-luxray.png" }, millisecondsToWait);
-        setTimeout(function () { playLuxray() }, millisecondsToWait);
-    }
-    else {
-        setTimeout(function () { document.querySelector('#picture img').src = "images/pixel-art.png" }, millisecondsToWait);
-    }
-    revert++;
+    setTimeout(function () { playLuxray() }, millisecondsToWait);
 }
 
 //Function triggered if clicked on a button with an Id
