@@ -20,6 +20,13 @@ function playLuxray() {
 
 }
 
+function playPokedexLuxray() {
+    playA();
+    millisecondsToWait = 300;
+    setTimeout(function () { playLuxray() }, millisecondsToWait);
+    
+}
+
 //Launch sound effect and change the image
 function showPicture1() {
     playA();
@@ -40,12 +47,6 @@ function showPicture3() {
     millisecondsToWait = 200;
     setTimeout(function () { document.querySelector('.popup-image img').src = "images/malaysia-monument.jpg" }, millisecondsToWait);
     setTimeout(function () { document.querySelector('.popup-image').style.display = 'block' }, millisecondsToWait);
-}
-
-function showPicture4() {
-    playA();
-    millisecondsToWait = 300;
-    setTimeout(function () { playLuxray() }, millisecondsToWait);
 }
 
 //Function triggered if clicked on a button with an Id
