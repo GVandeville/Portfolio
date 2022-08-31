@@ -67,7 +67,7 @@ btn3.addEventListener('click', event => {
 
 let btn4 = document.getElementById("profileButton");
 btn4.addEventListener('click', event => {
-    showPicture4();
+    playPokedexLuxray();
 });
 
 let music = document.getElementById('player');
